@@ -431,7 +431,7 @@ def index(request):
         else:
             res = simpleanalysis(request)
     response = HttpResponse(json.dumps(res))
-    response['Access-Control-Allow-Origin'] = 'https://sentiapp.netlify.app/'
+    response['Access-Control-Allow-Origin'] = '*'
     response['Access-Control-Allow-Methods'] = 'GET'
     return response
 
